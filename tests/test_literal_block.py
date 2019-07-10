@@ -14,11 +14,10 @@ Good stuff!
     expected = """\
 Some code:
 
-{language=python}
-~~~~~~~~
+```python
 def foo():
     return 1
-~~~~~~~~
+```
 
 Good stuff!
 
@@ -41,11 +40,10 @@ Good stuff!
     expected = """\
 Some code:
 
-{language=pycon}
-~~~~~~~~
+```pycon
 >>> x = 1
 1
-~~~~~~~~
+```
 
 Good stuff!
 
@@ -78,10 +76,9 @@ Good stuff!
     expected = """\
 Some code:
 
-{language=javascript}
-~~~~~~~~
+```javascript
 x=1;
-~~~~~~~~
+```
 
 Good stuff!
 

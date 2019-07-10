@@ -116,7 +116,7 @@ class Translator(nodes.NodeVisitor):
                 language = self.language
                 if self.body and self.body[0].startswith('>>>') and language=='python':
                     language = 'pycon'
-                self.body = ['{{language={}}}\n~~~~~~~~\n'.format(language)] + self.body + ['\n~~~~~~~~\n\n']
+                self.body = ['```{}\n'.format(language)] + self.body + ['\n```\n\n']
 
         self.push_context(LiteralContext(language))
 
