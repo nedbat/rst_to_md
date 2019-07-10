@@ -110,7 +110,7 @@ class Translator(nodes.NodeVisitor):
             def __init__(self, language, *args, **kwargs):
                 # passing language in constructor avoids scoping difficulties
                 self.language = language
-                super(LiteralContext, self).__init__(*args, **kwargs)
+                Context.__init__(self, *args, **kwargs)     # py2 compatibility
 
             def finalize(self):
                 language = self.language
